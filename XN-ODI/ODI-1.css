@@ -1,0 +1,83 @@
+/* CSS Document */
+header{
+    position: absolute;
+    left: 710px;
+    top: 110px;
+}
+header h4{
+    font-family:'Open Sans', sans-serif;
+    font-weight: bolder;
+}
+h1 { 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 5em;
+  border-bottom: 2px double #4f8db3;
+  line-height: 1.5em;
+  margin: 20px 0 0 0;
+  padding: 10px 350px 30px 10px;
+	}
+h2 span {
+      font-size:14px;
+      font-weight:normal;
+      }
+#main {
+    margin: 0 1050px 0 80px ;
+    background: transparent url(img/homepage-slider/h1.jpg) no-repeat top right;
+    background-size: 13em;
+}
+#costpie {
+  position: absolute;
+  float: right;
+  top: 150px;
+  left: 1080px;
+        border-left:2px grey dotted;
+    padding-left: 20px;
+}
+#schedulepie {
+  position: absolute;
+  float: right;
+  top: 395px;
+  left: 1080px;
+    border-left:2px grey dotted;
+    padding-left: 20px;
+}
+#bubblechart {
+  position: absolute;
+  float: right;
+  top: 175px;
+  left: 100px;
+}
+#datatable {
+  position: absolute;
+  float: right;
+  top: 650px;
+  left: 80px;
+  right:80px;
+    padding: 10px;
+    border:2px groove grey;
+    border-radius: 2%;
+    margin-bottom: 10px;
+}
+
+#paging{
+  position: relative;
+  float: right;
+right: 100px;
+    bottom: 20px;
+}
+#description{
+    position: absolute;
+    top:1650px;
+    margin: 20px 60px;
+}
+article h3{
+    font-size: 2.6em;
+    padding: 10px;
+}
+article h4{
+    font-size: 2em;
+    padding: 5px;
+}
+article p{
+    font-size: 1.3em;
+}

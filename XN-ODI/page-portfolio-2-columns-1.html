@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="ODI-1.css" rel="stylesheet" type="text/css">
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="https://dc-js.github.io/dc.js/css/dc.css" rel="stylesheet" type="text/css">
+
+<title>Data Visualization 1</title>
+</head>
+
+      <header>
+    <div class="navigation">
+      <h4><a href="index.html">Back </a>
+          / <a href="page-portfolio-2-columns-2.html"> Visualisation 2</a></h4>
+    </div>
+</header>
+    
+    
+<body>
+<section id="main">
+    <h1>  Data Visualisation 1</h1>
+    <div id="costpie">
+      <h2>Cost Variance Pie Chart
+          <span><a class="reset" href="javascript:variancePieChart.filterAll();dc.redrawAll();" >reset</a>
+          </span>
+          </h2>
+        <div id="gain-loss-chart"></div>
+    </div>
+    <div id="schedulepie">
+        <h2 id="timetitle">Schedule Variance Donut Chart
+        <span><a class="reset" href="javascript:scheduleVariancePieChart.filterAll();dc.redrawAll();" >reset</a>
+          </span>
+        </h2>
+        <div id="timeline"></div>
+    </div>
+    <br/> 
+    <div id="bubblechart">
+        <h2>Yearly Variance Bubble Chart
+              <span>(radius: project quantity, color: positive/negative) | <a class='reset'
+          href='javascript:yearlyBubbleChart.filterAll();dc.redrawAll();'>reset</a>
+              </span>
+        </h2>
+          <div id="yearly-bubble-chart"></div>
+    </div>
+    <br/>
+  <div id="datatable">
+      <h2 id="table">DataTable
+      <span><a class='reset'
+          href='javascript:dc.filterAll();dc.redrawAll();'
+          >Reset All</a>
+              </span>
+      </h2>
+      <table id="dc-data-table" class="table table-hover"></table>
+  <br/>
+      <div id="paging">
+    Showing <span id="begin"></span>-<span id="end"></span> of <span id="size"></span>.
+    <input id="last" type="Button" value="Last" onclick="javascript:last()" />
+        -
+    <input id="next" type="button" value="Next" onclick="javascript:next()"/>
+      </div>    
+    </div>
+    <br/>
+</section>
+    <article>
+        <section id="description">
+            
+            <h3> Visualization 1:</h3>
+
+            <h4>1. Who is the intended audience?</h4>
+            <p>
+The intended audiences for this visualization are American general public who want to have a general overview on government-launched projects and how they are actually executed comparing with original project plans. This visualization is suitable for those audiences as it is easy to extract key information and comparisons among real cost and expectation can be made quickly.
+            </p>
+            <h4>2. What does the visualization show?</h4>
+            <p>
+This visualization is designed to show the project execution variances between real and plan in terms of cost and schedule. The visualization is appropriate to the dataset because detailed variance information are given within the original data. By grouping those details by the starting year, further information could be extracted by audiences: average variances among different years, percentages of balanced, negative and positive projects within one year. Detailed project information can also be found by interacting with charts and shown in the table. By this kind of design, overall variance tendency and specified project information are clearly divided and easy for users to make further comparisons.
+            </p>
+            <p>
+To be specific, in the bubble chart, each bubble stands for the average variance (schedule and cost) in certain starting year. The pie chart and donut chart describe cost and schedule variance respectively. In these two charts, projects are divided to three types and shown in percentage: balanced projects (with small variances, project finished as planned), positive projects (positive variance, project costs fewer or finished earlier than plan), negative projects (negative variance, more cost or delay). The table in bottom displays details of projects.
+            </p>
+            <h4>3. How is visualization interactive?</h4>
+<p>
+The bubble chart is simple to use and easy to interact with. By clicking one bubble, one starting year is selected and the project percentages within that year are displayed in the pie chart and donut chart. Audiences could check specified project information by selecting certain percentage area within pie chart or donut chart.
+            </p>
+            <p>
+Based on interactions among diagrams, audiences could quickly get a brief overview on project variations in different years. By further interacting, detailed percentages and project information are displayed according to audience’s opinion. The interactivity is appropriate for audiences because step by step, from general to detail, it derives certain variance information which audiences want to check and visualize them smartly.
+                </p>
+        </section>
+    </article>
+    
+  
+        
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+        <script src="https://dc-js.github.io/dc.js/js/crossfilter.js"></script>
+        <script src="https://dc-js.github.io/dc.js/js/dc.js"></script>
+        
+        <script src="https://dc-js.github.io/dc.js/js/colorbrewer.js"></script>
+		<script src="js/ODI-1.js"></script>
+   <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script> 
+   <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script> 
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+</body>
+</html>

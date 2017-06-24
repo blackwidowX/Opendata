@@ -1,0 +1,77 @@
+/* CSS Document */
+ 
+header{
+    position: absolute;
+    left: 710px;
+    top: 110px;
+}
+header h4{
+    font-family:'Open Sans', sans-serif;
+    font-weight: bolder;
+}
+h1 { 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 5em;
+  border-bottom: 2px double #4f8db3;
+  line-height: 1.5em;
+  margin: 20px 0 0 0;
+  padding: 10px 350px 30px 10px;
+	}
+h2 span {
+      font-size:14px;
+      font-weight:normal;
+      }
+#main {
+    margin: 0 1050px 0 80px ;
+    background: aliceblue url(img/homepage-slider/h1.jpg) no-repeat top right;
+    background-size: 13em;
+}
+#start {
+  position: absolute;
+  float: right;
+  top: 190px;
+  left:100px;
+    border-top:2px dashed grey;
+}
+#complete {
+  position: absolute;
+  float: right;
+  top: 540px;
+  left:100px;
+        border-bottom:2px dashed grey;
+}
+#comparation{
+  position: absolute;
+  float: right;
+  top: 940px;
+  left:240px;
+    margin-bottom: 20px;
+}
+#sidebar{
+  position: absolute;
+  float: right;
+  top: 38px;
+  left:930px;
+    padding-left: 60px;
+    border-left:2px dashed grey;
+    border-bottom:2px dashed grey;
+}
+div.dc-chart g.row text {
+  fill: black;
+}
+#description{
+    position: absolute;
+    top:1350px;
+    margin: 20px 60px;
+}
+article h3{
+    font-size: 2.6em;
+    padding: 10px;
+}
+article h4{
+    font-size: 2em;
+    padding: 5px;
+}
+article p{
+    font-size: 1.3em;
+}

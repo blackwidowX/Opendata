@@ -1,0 +1,76 @@
+/* CSS Document */
+
+#main {
+  width: 60%;
+  padding: 10px;
+  display: inline-block;
+}
+#timetitle {
+  position: absolute;
+  float: right;
+  top: 10px;
+  left: 300px;
+}
+#timeline {
+  position: absolute;
+  float: right;
+  top: 80px;
+  left: 300px;
+}
+#yearly-bubble-chart {
+  position: absolute;
+  float: right;
+  top: 350px;
+  left: 20px;
+}
+#table {
+  position: absolute;
+  float: right;
+  top: 750px;
+  left: 20px;
+}
+#dc-data-table {
+  position: absolute;
+  float: right;
+  top: 780px;
+  left:20px;
+}
+#paging{
+  position: absolute;
+  float: right;
+  top: 1650px;
+  right:50px;
+}
+#yearly-startDate-chart {
+  position: absolute;
+  float: right;
+  top: 1780px;
+  left:25px;
+}
+#yearly-comDate-chart {
+  position: absolute;
+  float: right;
+  top: 1780px;
+  left:610px;
+}
+#sidebar{
+  position: absolute;
+  float: right;
+  top: 2580px;
+  left:20px;
+}
+div.dc-chart g.row text {
+  fill: black;
+}
+#yearly-cost-chart{
+  position: absolute;
+  float: right;
+  top: 2180px;
+  left:20px;
+}
+#yearly-volume-chart{
+  position: absolute;
+  float: right;
+  top: 2500px;
+  left:20px;
+}

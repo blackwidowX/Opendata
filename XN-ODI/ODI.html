@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="ODI.css" rel="stylesheet" type="text/css">
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="https://dc-js.github.io/dc.js/css/dc.css" rel="stylesheet" type="text/css">
+
+<title>Data Visualization</title>
+</head>
+
+<body>
+<section id="main">
+  <h2>Company Status</h2>
+  <div id="gain-loss-chart"></div>
+    <h2 id="timetitle">Expenses per day</h2>
+  <div id="timeline"></div>
+    <br/> 
+      <h2>Your own title</h2>
+  <div id="yearly-bubble-chart"></div>
+    <br/>
+  <h2 id="table">DataTable</h2>
+<table id="dc-data-table" class="table table-hover"></table>
+  <div id="paging">
+    Showing <span id="begin"></span>-<span id="end"></span> of <span id="size"></span>.
+    <input id="last" type="Button" value="Last" onclick="javascript:last()" />
+    <input id="next" type="button" value="Next" onclick="javascript:next()"/>
+  </div>
+    <br/>
+    <h2 id=startDateChart>Start Date Chart</h2>
+  <div id="yearly-startDate-chart"></div>
+        <h2 id=comDateChart>Completion Date Chart</h2>
+  <div id="yearly-comDate-chart"></div>
+    <h2 id=costChart>Comparation Cost Chart</h2>
+  <div id="yearly-cost-chart"></div>
+  <div id="yearly-volume-chart"></div>
+  <br/>
+  <!--<h2>Raw data</h2>
+  <table id="dc-data-table" class="table table-hover"></table>-->
+</section>
+<section id="sidebar">
+<h2 id=lifecycleChart>Lifecycle Cost Chart</h2>
+  <div id="lifecycle_row"></div>
+</section>
+        
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+        <script src="https://dc-js.github.io/dc.js/js/crossfilter.js"></script>
+        <script src="https://dc-js.github.io/dc.js/js/dc.js"></script>
+        
+        <script src="https://dc-js.github.io/dc.js/js/colorbrewer.js"></script>
+		<script src="js/ODI-2.js"></script>
+   <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script> 
+   <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script> 
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+</body>
+</html>

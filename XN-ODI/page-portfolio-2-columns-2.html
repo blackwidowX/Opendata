@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="ODI-2.css" rel="stylesheet" type="text/css">
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="https://dc-js.github.io/dc.js/css/dc.css" rel="stylesheet" type="text/css">
+
+<title>Data Visualization 2</title>
+</head>
+
+    <header>
+    <div class="navigation">
+      <h4><a href="index.html">Back </a>
+          / <a href="page-portfolio-2-columns-1.html"> Visualisation 1</a></h4>
+    </div>
+</header>
+    
+<body>
+<section id="main">
+        <h1>  Data Visualisation 2</h1>
+    <div id="start">
+        <div id="yearly-startDate-chart">
+            <h2 id=startDateChart>Start Date Chart
+            <span class="reset" >range: <span class="filter"></span>
+        <a class="reset" href="javascript:startDateChart.filterAll();dc.redrawAll();" >reset</a>
+            </span></h2>
+        </div>
+    </div>
+    <div id="complete">
+        <div id="yearly-comDate-chart"><h2 id=comDateChart>Completion Date Chart
+        <span class="reset" >range: <span class="filter"></span>
+        <a class="reset" href="javascript:comDateChart.filterAll();dc.redrawAll();" >reset</a>
+            </span>
+        </h2>
+        </div>
+    </div>
+    <br/>
+    <div id="comparation">
+        <div id="yearly-cost-chart"><h2 id=costChart>Comparation Cost Chart
+        <span class="reset" >range: <span class="filter"></span>
+        <a class="reset" href="javascript:costChart.filterAll();volumeChart.filterAll();dc.redrawAll();">reset</a></span></h2>
+        </div>
+        <div id="yearly-volume-chart"></div>
+    </div>
+
+</section>
+<section id="sidebar">
+<h2 id=lifecycleChart>Lifecycle Cost Chart
+    <span>
+    <a class="reset" href="javascript:dc.filterAll();dc.redrawAll();" >Reset All</a></span>
+    </h2>
+  <div id="lifecycle_row"></div>
+</section>
+        <article>
+        <section id="description">
+            
+            <h3> Visualization 2:</h3>
+
+            <h4>1. Who is the intended audience?</h4>
+            <p>
+                The intended audiences are general America public who want to find out project information associated with their departments such as how many projects launched in certain year by some departments and whether those departments spend more or fewer than planned. This visualization is appropriate for those audiences since it is convenient to visualize intended information and easy to understand.
+            </p>
+            <h4>2. What does the visualization show?</h4>
+            <p>
+                This visualization is designed to show the statistic project information according to their department: project amounts in different start year, end year and executed by different department. Differences between plan and real cost are also visualized. This visualization is suits the dataset because the relation between departments and projects is clear and detailed. Besides, the dataset also lists real cost and planned cost clearly. By grouping those projects by their departments, statistic information could be easily extracted by audiences: how many projects carried out by certain departments, among those projects how many of them starts in 2011, what is the planned cost and real cost for the department in that year. By this design audiences could not only get clear and detailed information on the department’s behave, but also further information behind data can be discovered, such as identifying amount extremum and cost tendency.
+            </p>
+            <p>
+                To be specific, the row chart displays departments and project amount executed by them. It gives an obvious comparison among departments. The two bar charts listed the amount of projects which starts and ends in the year range. Bar charts are associated with selected departments in the row chart. The stacked area chart displays number of planned and real cost within certain departments according to the year range. Audiences could find various features with these charts.
+            </p>
+            <h4>3. How is visualization interactive?</h4>
+            <p>
+                It is simple and easy to interact with the row chart. By clicking, some departments can be chosen, at the same time, other charts would displayed related contents.
+            </p>
+            <p>
+                In these two bar charts, on one hand, audiences could select year range to show how many projects start in certain year range and simultaneously the other bar chart would display the end year of these projects. On the other hand, audiences could also select year range in the end year bar chart, then the start year bar chart would display content similarly. Additionally, more detailed visualization could be made by selecting year range in both bar charts.
+            </p>
+            <p>
+                The stacked flow chart can be interacted by selecting year range, once the year range selected, other diagrams would react according to the range.
+            </p>
+        </section>
+    </article>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+        <script src="https://dc-js.github.io/dc.js/js/crossfilter.js"></script>
+        <script src="https://dc-js.github.io/dc.js/js/dc.js"></script>
+        
+        <script src="https://dc-js.github.io/dc.js/js/colorbrewer.js"></script>
+		<script src="js/ODI-2.js"></script>
+   <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script> 
+   <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script> 
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+</body>
+</html>
