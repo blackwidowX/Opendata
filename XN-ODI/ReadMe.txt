@@ -1,4 +1,10 @@
 xn1y14(28172175£©
+you can visit the site with the homepage of index.html.
+
+visualization files are:
+page-profile-2-columns-1
+and
+page-profile-2-columns-2
 
 ## Hosting information:
 A live version of the visualisations can be found at: http://users.ecs.soton.ac.uk/hpe1g11/comp6214-open-data/
